@@ -5,7 +5,6 @@ import Map from "./pages/map";
 function App() {
   return (
     <div className="App">
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="map" element={<Map />} />

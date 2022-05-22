@@ -1,17 +1,32 @@
+import { Row, Col } from "antd";
 import React from "react";
-import { Link } from "react-router-dom";
 
 class Home extends React.Component {
   render() {
     return (
       <>
-        <main>
-          <h2>Welcome to the Home!</h2>
-          <p>You can do this, I believe in you.</p>
-        </main>
-        <nav>
-          <Link to="/map">Map</Link>
-        </nav>
+        <Row>
+          <Col xxl={18} xl={18} lg={18} md={22} sm={22} xs={22}>
+            <Col span={24}>
+              <h1>hello rawan component</h1>
+            </Col>
+            <Col span={24}>
+              <h1>Live CO2 Concentration component</h1>
+            </Col>
+          </Col>
+
+          <Col xxl={6} xl={6} lg={6} md={22} sm={22} xs={22}>
+            <Col span={24}>
+              <h1>time component</h1>
+            </Col>
+            <Col span={24}>
+              <h1>ai component</h1>
+            </Col>
+            <Col span={24}>
+              <h1>input component</h1>
+            </Col>
+          </Col>
+        </Row>
       </>
     );
   }

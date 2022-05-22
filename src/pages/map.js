@@ -1,17 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Row, Col } from "antd";
+
 
 class Map extends React.Component {
   render() {
     return (
       <>
-        <main>
-          <h2>Welcome to the Map!</h2>
-          <p>You can do this, I believe in you.</p>
-        </main>
-        <nav>
-          <Link to="/">home</Link>
-        </nav>
+         <Row>
+         <Col xxl={18} xl={18} lg={18} md={24} sm={24} xs={24}>
+             map
+         </Col>
+         <Col xxl={6} xl={6} lg={6} md={24} sm={24} xs={24}>
+            <Row>
+                <Col span={24}>
+                    card 1
+                </Col>
+                <Col span={24}>
+                    card 2
+                    </Col>
+            </Row>
+         </Col>
+        </Row>
       </>
     );
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import Chart from "react-apexcharts";
 import { Row, Col, Space, Typography } from "antd";
+import MainCard from "../main/main-card";
 
 const { Title } = Typography;
 
@@ -86,7 +87,7 @@ class RaidialChart extends React.Component {
         stroke: {
           lineCap: "round",
         },
-        labels: ["Percent"],
+        labels: ["PPM"],
       },
     };
   }
@@ -94,15 +95,16 @@ class RaidialChart extends React.Component {
   render() {
     return (
       <>
-        <Space direction="vertical" align="center" style={{ display: "block" }}>
-          <Title level={2}>CO2 Daily Chart</Title>
-
-          <Chart
-            options={this.state.options}
-            series={this.state.series}
-            type="radialBar"
-          />
-        </Space>
+        <MainCard
+          title="CO2 Daily Chart"
+          children={
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="radialBar"
+            />
+          }
+        />
       </>
     );
   }

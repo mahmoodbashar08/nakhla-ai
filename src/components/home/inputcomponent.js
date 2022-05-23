@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.scss";
 import { Input } from "antd";
-function InputComponent() {
+function MyInputComponent() {
   return (
     <div className="InputComponent">
       <div className="EnterNumber">
@@ -22,4 +22,4 @@ function InputComponent() {
   );
 }
 
-export default InputComponent;
+export default MyInputComponent;

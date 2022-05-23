@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import Logo from "../../images/Illustration.png";
+import Logo from "../home/image/Illustration.png";
 function HelloRawan() {
   return (
     <div className="HelloRawan">

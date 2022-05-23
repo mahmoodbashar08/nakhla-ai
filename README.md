@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Config the backend endpoints
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+you will only need to change the [api.js](/src/constants/api.js) file , with your own server endpoints
 
-## Available Scripts
+1- Markers with data </br>
 
-In the project directory, you can run:
+## returns markers position , and their daily week data, and the co2 percent
 
-### `npm start`
+- schema :
+  ```
+  {
+    data :[
+    {
+      name : 'example',
+      data : {
+        dailyChartSeries:[10,20,30,40,50,60,70],
+        co2Concentration:70
+            }
+        }
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ]
+  }
+  ```
+  api response example :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+{"data":[{"name":"nakhla-1","data":{"dailyChartSeries":[10,20,30,40,50,60,70],"co2Concentration":70},"lat":36.3773383013567,"lng":43.16410915286604},{"name":"nakhla-2","data":{"dailyChartSeries":[40,20,70,60,40,10,30],"co2Concentration":60},"lat":36.35317367802859,"lng":43.097355072660896},{"name":"nakhla-3","data":{"dailyChartSeries":[30,50,70,20,40,10,80],"co2Concentration":50},"lat":36.32472542851645,"lng":43.13226316946006},{"name":"nakhla-4","data":{"dailyChartSeries":[90,60,40,20,30,50,70],"co2Concentration":40},"lat":36.35103630937551,"lng":43.063671821363464},{"name":"nakhla-5","data":{"dailyChartSeries":[80,70,90,30,40,20,50],"co2Concentration":30},"lat":36.37158550028737,"lng":43.18146113044602},{"name":"nakhla-6","data":{"dailyChartSeries":[70,40,80,10,30,50,90],"co2Concentration":20},"lat":36.3911432879625,"lng":43.13144660579224}]}
+```

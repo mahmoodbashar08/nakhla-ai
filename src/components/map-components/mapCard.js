@@ -59,7 +59,7 @@ export default function MapCard() {
           latitude={location.lat}
           anchor="bottom"
         >
-          <img src={pin} />
+          <img src={pin} alt={location.name} />
         </Marker>
       ))}
     </Map>

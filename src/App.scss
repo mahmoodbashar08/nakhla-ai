@@ -6,7 +6,9 @@ body {
   background: $bgColor;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: $textColor;
-  padding-top: 1rem;
+  // padding-top: 1rem;
+  overflow-x: hidden;
+ 
 }
 .card {
   background: $cardColor;
@@ -20,4 +22,14 @@ body {
   background: $cardColor;
   min-height: 100%;
   min-width: 100%;
+  text-align: center;
+  line-height: 6.5rem;
+  font-size: 1.6rem;
+  color: $textColor;
+  * {
+    color: $textColor;
+  }
+  .logo {
+    width: 70%;
+  }
 }

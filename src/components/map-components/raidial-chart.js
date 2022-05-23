@@ -1,16 +1,13 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import { Row, Col, Space, Typography } from "antd";
 import MainCard from "../main/main-card";
-
-const { Title } = Typography;
 
 class RaidialChart extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      series: [75],
+      series: [this.props.percent],
       options: {
         chart: {
           height: 350,
@@ -27,9 +24,6 @@ class RaidialChart extends React.Component {
               margin: 0,
               size: "70%",
               background: "#fff",
-              image: undefined,
-              imageOffsetX: 0,
-              imageOffsetY: 0,
               position: "front",
               dropShadow: {
                 enabled: true,
@@ -96,11 +90,11 @@ class RaidialChart extends React.Component {
     return (
       <>
         <MainCard
-          title="CO2 Daily Chart"
+          title="CO2 Concentration"
           children={
             <Chart
               options={this.state.options}
-              series={this.state.series}
+              series={[this.props.percent]}
               type="radialBar"
             />
           }

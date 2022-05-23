@@ -27,12 +27,6 @@ class LineChart extends React.Component {
           size: 5,
         },
       },
-      series: [
-        {
-          name: "series-1",
-          data: [0, 250, 50, 750, 800, 700, 400],
-        },
-      ],
     };
   }
 
@@ -44,7 +38,7 @@ class LineChart extends React.Component {
           children={
             <Chart
               options={this.state.options}
-              series={this.state.series}
+              series={[{ name: "co2", data: this.props.series }]}
               type="line"
             />
           }

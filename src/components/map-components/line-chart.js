@@ -1,9 +1,7 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import { Row, Col, Space, Typography } from "antd";
+import LoadingComponent from "../main/loading";
 import MainCard from "../main/main-card";
-
-const { Title } = Typography;
 
 class LineChart extends React.Component {
   constructor(props) {
@@ -33,16 +31,20 @@ class LineChart extends React.Component {
   render() {
     return (
       <>
-        <MainCard
-          title="CO2 Daily Chart"
-          children={
-            <Chart
-              options={this.state.options}
-              series={[{ name: "co2", data: this.props.series }]}
-              type="line"
-            />
-          }
-        />
+        {this.props.series.length < 1 ? (
+          <LoadingComponent />
+        ) : (
+          <MainCard
+            title="CO2 Daily Chart"
+            children={
+              <Chart
+                options={this.state.options}
+                series={[{ name: "co2", data: this.props.series }]}
+                type="line"
+              />
+            }
+          />
+        )}
       </>
     );
   }

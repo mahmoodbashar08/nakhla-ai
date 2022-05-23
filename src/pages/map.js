@@ -13,11 +13,12 @@ class Map extends React.Component {
     const setCurrentData = (location) => {
       this.setState({ data: location });
     };
+    const { data } = this.state;
     const dailyChartSeries =
-      this.state.data !== null ? this.state.data.data.dailyChartSeries : [];
+      data && data !== null ? data.data.dailyChartSeries : [];
 
     const co2PercentData =
-      this.state.data !== null ? this.state.data.data.co2Concentration : null;
+      data && data !== null ? data.data.co2Concentration : 0;
     return (
       <>
         <Row

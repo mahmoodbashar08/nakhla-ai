@@ -11,35 +11,27 @@ class Home extends React.Component {
       <>
         <Row>
           <Col xxl={18} xl={18} lg={18} md={22} sm={22} xs={22}>
-            <Col span={24}>
-              <h1>
+            <Row gutter={[0,20]} justify="center">
+              <Col span={23}>
                 <HelloRawan />
-              </h1>
-            </Col>
-            <Col span={24}>
-              <h1>
+              </Col>
+              <Col span={23}>
                 <div className="ApexChart">
                   <ApexChart />
                 </div>
-              </h1>
-            </Col>
+              </Col>
+            </Row>
           </Col>
 
           <Col xxl={6} xl={6} lg={6} md={22} sm={22} xs={22}>
             <Col span={24}>
-              <h1>
-                <TimeComponent />
-              </h1>
+              <TimeComponent />
             </Col>
             <Col span={24}>
-              <h1>
-                <AiComponent />
-              </h1>
+              <AiComponent />
             </Col>
             <Col span={24}>
-              <h1>
-                <MyInputComponent />
-              </h1>
+              <MyInputComponent />
             </Col>
           </Col>
         </Row>

@@ -72,7 +72,7 @@ export default function MapCard({ changeData }) {
     changeData(location);
     if (mapRef.current !== null) {
       mapRef.current.easeTo({
-        center: [ location.lng,location.lat],
+        center: [location.lng, location.lat],
         zoom: 13,
         duration: 500,
       });

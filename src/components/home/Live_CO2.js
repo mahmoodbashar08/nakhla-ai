@@ -66,7 +66,6 @@ function ApexChart(props) {
     },
     fill: {
       type: "gradient",
-
       gradient: {
         shade: "dark",
         type: "horizontal",
@@ -83,6 +82,13 @@ function ApexChart(props) {
     },
     labels: ["PPM"],
   };
-  return <ReactApexChart options={options} series={series} type="radialBar" />;
+  return (
+    <ReactApexChart
+      options={options}
+      series={series}
+      type="radialBar"
+      height={470}
+    />
+  );
 }
 export default ApexChart;

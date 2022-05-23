@@ -11,7 +11,7 @@ class Home extends React.Component {
       <>
         <Row>
           <Col xxl={18} xl={18} lg={18} md={22} sm={22} xs={22}>
-            <Row gutter={[0,20]} justify="center">
+            <Row gutter={[0, 20]} justify="center">
               <Col span={23}>
                 <HelloRawan />
               </Col>

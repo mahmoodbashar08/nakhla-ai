@@ -9,7 +9,14 @@ function MyInputComponent() {
           Enter Number <br />
           Of Palm Trees
         </p>
-        <Input placeholder="10" type="number" className="Input" />
+        <div className="InputDiv">
+          <Input
+            placeholder="10"
+            type="number"
+            className="InputText"
+            width={100}
+          />
+        </div>
       </div>
       <div className="Concentration">
         <p className="ConcentrationP">

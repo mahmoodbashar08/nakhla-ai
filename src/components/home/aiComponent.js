@@ -6,17 +6,21 @@ function AiComponent() {
     <div className="AiComponent">
       <div className="Recommended">
         <p className="RecommendedPalm">
-          Recommended Palm <br />
-          Trees
+          Recommended
+          <br /> Palm Trees
         </p>
         <label className="RecommendedNumber">12</label>
       </div>
-      <div className="Concentration">
-        <p>
-          CO2 <br /> Concentration
-        </p>
+      <div className="ConcentrationDiv">
+        <div className="ConcentrationAi">
+          <p>
+            CO2
+            <br />
+            Concentration
+          </p>
+        </div>
+        <label className="ConcentrationLableNumber">140</label>
       </div>
-      <label>140</label>
     </div>
   );
 }

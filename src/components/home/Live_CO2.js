@@ -83,13 +83,6 @@ function ApexChart(props) {
     },
     labels: ["PPM"],
   };
-  return (
-    <ReactApexChart
-      options={options}
-      series={series}
-      type="radialBar"
-      width={700}
-    />
-  );
+  return <ReactApexChart options={options} series={series} type="radialBar" />;
 }
 export default ApexChart;

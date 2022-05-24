@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
-import LineChart from "../components/map-components/line-chart";
-import RaidialChart from "../components/map-components/raidial-chart";
-import MapCard from "../components/map-components/mapCard";
+import LineChart from "../components/map/line-chart";
+import RaidialChart from "../components/map/raidial-chart";
+import MapCard from "../components/map/mapCard";
 
 class Map extends React.Component {
   state = {

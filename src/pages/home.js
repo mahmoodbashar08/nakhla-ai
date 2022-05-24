@@ -1,38 +1,46 @@
 import { Row, Col } from "antd";
 import React from "react";
-import HelloRawan from "../components/home/helloRawan";
-import MyInputComponent from "../components/home/inputcomponent";
-import ApexChart from "../components/home/Live_CO2";
-import AiComponent from "../components/home/aiComponent";
-import TimeComponent from "../components/home/timeComponent";
+import Wellcome from "../components/home/wellcome";
+import MyInputComponent from "../components/home/input-component";
+import ApexChart from "../components/home/live-co2";
+import AiComponent from "../components/home/ai";
+import TimeComponent from "../components/home/time-component";
+import MainCard from "../components/main/main-card";
+
 class Home extends React.Component {
   render() {
     return (
       <>
-        <Row>
-          <Col xxl={18} xl={18} lg={18} md={22} sm={22} xs={22}>
+        <Row
+          justify="space-evenly"
+          gutter={[{ xs: 0, sm: 0, md: 0, lg: 0, xl: 16 }, 20]}
+        >
+          <Col xxl={18} xl={18} lg={18} md={24} sm={24} xs={24}>
             <Row gutter={[0, 20]} justify="center">
-              <Col span={23}>
-                <HelloRawan />
+              <Col span={24}>
+                <Wellcome />
               </Col>
-              <Col span={23}>
-                <div className="ApexChart">
-                  <ApexChart />
-                </div>
+              <Col span={24} className="card">
+                <MainCard
+                  title="Live CO2 Concentration"
+                  children={<ApexChart percent="50" />}
+                />
               </Col>
             </Row>
           </Col>
 
-          <Col xxl={6} xl={6} lg={6} md={22} sm={22} xs={22}>
-            <Col span={24}>
-              <TimeComponent />
-            </Col>
-            <Col span={24}>
-              <AiComponent />
-            </Col>
-            <Col span={24}>
-              <MyInputComponent />
-            </Col>
+          <Col xxl={6} xl={6} lg={6} md={24} sm={24} xs={24}>
+            <Row justify="space-between" gutter={[0, 20]}>
+              <Col span={24}>
+                <TimeComponent />
+              </Col>
+              <Col span={24}>
+                <AiComponent />
+              </Col>
+              <Col span={24}>
+                <MyInputComponent />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </>

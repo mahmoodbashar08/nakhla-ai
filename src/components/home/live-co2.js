@@ -3,10 +3,10 @@ import "./home.scss";
 import ReactApexChart from "react-apexcharts";
 
 function ApexChart(props) {
-  const series = [30];
   const options = {
     chart: {
       height: 350,
+      width: "100%",
       type: "radialBar",
       toolbar: {
         show: true,
@@ -85,7 +85,7 @@ function ApexChart(props) {
   return (
     <ReactApexChart
       options={options}
-      series={series}
+      series={[props.percent]}
       type="radialBar"
       height={470}
     />

@@ -23,6 +23,10 @@ function App() {
             <Route path="map" element={<Map />} />
           </Routes>
         </Col>
+
+        <Col span={24} style={{ textAlign: "center" }}>
+          fooooooooooooooooooter
+        </Col>
       </Row>
     </div>
   );

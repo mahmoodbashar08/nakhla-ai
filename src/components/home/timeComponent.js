@@ -6,7 +6,7 @@ function TimeComponent() {
   return (
     <div className="TimeComponent">
       <p className="Time">
-        <h4 className="TimeNow">Time Now</h4>
+        <h4 className="TimeNow">current Time</h4>
         <Clock
           className="LiveTime"
           format={"HH:mm:ss"}
@@ -15,10 +15,10 @@ function TimeComponent() {
         />
       </p>
       <p className="date">
-        <h4 className="DateNow">Date Now</h4>
+        <h4 className="DateNow">current date</h4>
         <Date
           className="LiveDate"
-          format={"D:MM:YYYY"}
+          format={"D-MM-YYYY"}
           ticking={true}
           timezone={"GMT+3"}
         />

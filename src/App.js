@@ -1,14 +1,11 @@
-import "./App.scss";
-import { Routes, Route, Link } from "react-router-dom";
+import "./App.less";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Map from "./pages/map";
 import Sidebar from "./components/main/sidebar";
-import { Col, Row, Layout, Menu, Image } from "antd";
-import { HomeFilled, MenuOutlined, CompassFilled } from "@ant-design/icons";
-import Logo from "./images/logo.png";
+import { Button, Col, Row } from "antd";
 import MobileHeader from "./components/main/mobile-header";
 
-const { Header } = Layout;
 function App() {
   return (
     <div className="App">
@@ -18,9 +15,12 @@ function App() {
           <Sidebar />
         </Col>
         <Col xxl={0} xl={0} lg={0} md={24} sm={24} xs={24}>
-          <MobileHeader/>
+          <MobileHeader />
         </Col>
         <Col xxl={22} xl={22} lg={22} md={24} sm={24} xs={24}>
+          <Button type="primary" block>
+            tessst
+          </Button>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="map" element={<Map />} />

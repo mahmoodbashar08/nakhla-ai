@@ -1,6 +1,8 @@
 import React from "react";
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { Tag } from 'antd';
+
 import pin from "../../images/pin.png";
 import "./map.scss";
 import { MarkersEndpoint } from "../../constants/api";
@@ -55,7 +57,10 @@ export default function MapCard({ changeData }) {
             style={{ cursor: "pointer" }}
             onClick={() => onClick(location)}
           >
+
             <img src={pin} alt={location.name} />
+            <Tag color="green">5</Tag>
+
           </Marker>
         ))}
       </Map>

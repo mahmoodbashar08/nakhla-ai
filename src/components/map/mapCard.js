@@ -1,11 +1,13 @@
 import React from "react";
 import Map, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { Tag } from 'antd';
+import { Popover, Typography } from "antd";
 
 import pin from "../../images/pin.png";
 import "./map.scss";
 import { MarkersEndpoint } from "../../constants/api";
+
+const { Text } = Typography;
 export default function MapCard({ changeData }) {
   const [markers, setMarkers] = React.useState([]);
 
@@ -57,10 +59,13 @@ export default function MapCard({ changeData }) {
             style={{ cursor: "pointer" }}
             onClick={() => onClick(location)}
           >
-
-            <img src={pin} alt={location.name} />
-            <Tag color="green">5</Tag>
-
+            <Popover
+              content={<Text>Palams Count : {location.count || 0}</Text>}
+              title={location.name}
+              trigger="click"
+            >
+              <img src={pin} alt={location.name} />
+            </Popover>
           </Marker>
         ))}
       </Map>

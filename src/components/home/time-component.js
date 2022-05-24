@@ -11,7 +11,7 @@ function TimeComponent() {
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>
-            <Title level={4}>Current time</Title>
+            <Title level={5}>Current time</Title>
           </Col>
           <Col span={24}>
             <Clock
@@ -27,7 +27,7 @@ function TimeComponent() {
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>
-            <Title level={4}>Current date</Title>
+            <Title level={5}>Current date</Title>
           </Col>
           <Col span={24}>
             <Date

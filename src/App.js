@@ -18,9 +18,6 @@ function App() {
           <MobileHeader />
         </Col>
         <Col xxl={22} xl={22} lg={22} md={24} sm={24} xs={24}>
-          <Button type="primary" block>
-            tessst
-          </Button>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="map" element={<Map />} />

@@ -7,7 +7,11 @@ import { Col, Row, Typography } from "antd";
 const { Title } = Typography;
 function TimeComponent() {
   return (
-    <Row justify={"center"} className="card" style={{ padding: "2rem" }}>
+    <Row
+      justify={"center"}
+      className="card"
+      style={{ padding: "2rem", paddingTop: "4rem", paddingBottom: "4rem" }}
+    >
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>

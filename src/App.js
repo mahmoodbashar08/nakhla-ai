@@ -5,7 +5,7 @@ import Map from "./pages/map";
 import Sidebar from "./components/main/sidebar";
 import { Button, Col, Row } from "antd";
 import MobileHeader from "./components/main/mobile-header";
-
+import Footer from "./components/home/footer";
 function App() {
   return (
     <div className="App">
@@ -25,7 +25,7 @@ function App() {
         </Col>
 
         <Col span={24} style={{ textAlign: "center" }}>
-          fooooooooooooooooooter
+          <Footer />
         </Col>
       </Row>
     </div>

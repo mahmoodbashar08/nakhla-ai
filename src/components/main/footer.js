@@ -10,6 +10,7 @@ function Footer() {
         rel="noreferrer"
         href="https://www.instagram.com/agritech.mosul/"
       >
+        {" "}
         Agri-Tech
       </a>
     </div>

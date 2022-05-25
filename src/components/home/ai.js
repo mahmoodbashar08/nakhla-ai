@@ -18,7 +18,9 @@ function AiComponent() {
             <Title level={5}>Recommended Palm Trees</Title>
           </Col>
           <Col span={24}>
-            <Title level={4}>12</Title>
+            <Title level={4} style={{ paddingTop: "1.6rem" }}>
+              12
+            </Title>
           </Col>
         </Row>
       </Col>

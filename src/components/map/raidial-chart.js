@@ -56,7 +56,7 @@ class RaidialChart extends React.Component {
               },
               value: {
                 formatter: function (val) {
-                  return parseInt(val * 40) + "/4000";
+                  return parseInt(val * 40);
                 },
                 color: "#111",
                 fontSize: "36px",

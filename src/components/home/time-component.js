@@ -10,7 +10,12 @@ function TimeComponent() {
     <Row
       justify={"center"}
       className="card"
-      style={{ padding: "2rem", paddingTop: "4rem", paddingBottom: "4rem" }}
+      style={{
+        padding: "2rem",
+        paddingTop: "4rem",
+        paddingBottom: "4rem",
+        fontWeight: "bold",
+      }}
     >
       <Col span={12}>
         <Row justify={"center"}>

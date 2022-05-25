@@ -71,7 +71,9 @@ Home data will be fetched for each 5 seconds from the server.
       data : {
         dailyChartSeries:[10,20,30,40,50,60,70] (int array , 7 numbers only ),
         co2Concentration:70 (int)
-            }
+            },
+      "lat":00.0 (int),
+      "lng":00.0 (int)
         } ,
         ...
 

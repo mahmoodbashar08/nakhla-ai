@@ -12,8 +12,8 @@ function TimeComponent() {
       className="card"
       style={{
         padding: "2rem",
-        paddingTop: "4rem",
-        paddingBottom: "4rem",
+        paddingTop: "3.8rem",
+        paddingBottom: "3.8rem",
         fontWeight: "bold",
       }}
     >

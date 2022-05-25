@@ -5,7 +5,14 @@ function Footer() {
   return (
     <div className="Footer">
       made with <HeartFilled className="Icon" /> by
-      <a target="_blank"  rel="noreferrer" href="https://www.instagram.com/agritech.mosul/"> Agri-Tect</a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.instagram.com/agritech.mosul/"
+      >
+        {" "}
+        Agri-Tech
+      </a>
     </div>
   );
 }

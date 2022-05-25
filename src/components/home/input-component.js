@@ -23,13 +23,33 @@ function MyInputComponent() {
       });
   };
   return (
-    <Row justify={"center"} className="card" style={{ padding: "2rem" }}>
+    <Row
+      justify={"center"}
+      className="card"
+      style={{
+        padding: "2rem",
+        fontWeight: "bold",
+      }}
+    >
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>
-            <Title level={5}> Enter Number Of Palm Trees</Title>
+            <Title
+              level={5}
+              style={{ paddingTop: "1rem", fontFamily: "Baloo Bhai 2" }}
+            >
+              {" "}
+              Enter Number Of Palm Trees
+            </Title>
           </Col>
-          <Col span={24}>
+          <Col
+            span={24}
+            style={{
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+              fontFamily: "Baloo Bhai 2",
+            }}
+          >
             <Input
               placeholder="10"
               type="number"
@@ -44,10 +64,25 @@ function MyInputComponent() {
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>
-            <Title level={5}>CO2 Concentration</Title>
+            <Title
+              level={5}
+              style={{ paddingTop: "1rem", fontFamily: "Baloo Bhai 2" }}
+            >
+              CO2 Concentration
+            </Title>
           </Col>
           <Col span={24}>
-            <Title level={5}> {data}</Title>
+            <Title
+              level={5}
+              style={{
+                paddingTop: "2rem",
+                paddingBottom: "2rem",
+                fontFamily: "Baloo Bhai 2",
+              }}
+            >
+              {" "}
+              {data}
+            </Title>
           </Col>
         </Row>
       </Col>

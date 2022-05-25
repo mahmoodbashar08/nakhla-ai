@@ -20,7 +20,9 @@ function TimeComponent() {
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>
-            <Title level={5}>Current time</Title>
+            <Title level={5} style={{ fontSize: "14pt" }}>
+              Current time
+            </Title>
           </Col>
           <Col span={24}>
             <Clock
@@ -36,7 +38,9 @@ function TimeComponent() {
       <Col span={12}>
         <Row justify={"center"}>
           <Col span={24}>
-            <Title level={5}>Current date</Title>
+            <Title level={5} style={{ fontSize: "14pt" }}>
+              Current date
+            </Title>
           </Col>
           <Col span={24}>
             <Date

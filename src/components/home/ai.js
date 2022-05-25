@@ -15,7 +15,9 @@ function AiComponent(props) {
       <Col span={12} flex="stretch">
         <Row justify={"space-between"}>
           <Col span={24}>
-            <Title level={5}>Recommended Palm Trees</Title>
+            <Title level={5} style={{ paddingTop: "1rem" }}>
+              Recommended Palm Trees
+            </Title>
           </Col>
           <Col span={24}>
             <Title level={4} style={{ paddingTop: "1.6rem" }}>
@@ -28,10 +30,14 @@ function AiComponent(props) {
       <Col span={12} flex="stretch">
         <Row justify={"space-between"}>
           <Col span={24}>
-            <Title level={5}>CO2 Concentration</Title>
+            <Title level={5} style={{ paddingTop: "1rem" }}>
+              CO2 Concentration
+            </Title>
           </Col>
           <Col span={24}>
-            <Title level={4}>{props.co2 || 0}</Title>
+            <Title level={4} style={{ paddingTop: "1.6rem" }}>
+              {props.co2 || 0}
+            </Title>
           </Col>
         </Row>
       </Col>

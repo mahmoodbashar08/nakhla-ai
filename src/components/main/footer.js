@@ -13,6 +13,9 @@ function Footer() {
         {" "}
         Agri-Tech
       </a>
+      <br />
+      templete by{" "}
+      <a href="https://www.behance.net/boguslawpodhalicz">Bogusław Podhalicz</a>
     </div>
   );
 }

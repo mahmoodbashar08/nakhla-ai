@@ -4,3 +4,19 @@
  */
 export const MarkersEndpoint =
   "https://628ba590667aea3a3e33dac2.mockapi.io/markers";
+
+/** @example HomeEndpoint response */
+/**
+ * {"recommended":22949,"live-co2":22765,"concentration":40130,"id":"1"}
+ * */
+export const HomeEndpoint = "https://628ba590667aea3a3e33dac2.mockapi.io/home";
+
+/** @example InputEndpoint response */
+/**
+ * {"data":32}
+ *
+ *  data will be send as : inputValue
+ *
+ * */
+export const InputEndpoint =
+  "http://127.0.0.1:8000/caluclate-palms";

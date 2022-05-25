@@ -1,14 +1,12 @@
-import React, { useEffect } from "react";
+
 import "./home.scss";
 import ReactApexChart from "react-apexcharts";
 
-function ApexChart(props) {
- 
- 
-  const series = [400];
+function ApexChart({data}) {
   const options = {
     chart: {
       height: 350,
+      width: "100%",
       type: "radialBar",
       toolbar: {
         show: true,
@@ -84,13 +82,20 @@ function ApexChart(props) {
     },
     labels: ["PPM"],
   };
+
+
+ 
+
   return (
+    <div className='per-main'>
+      {/* <div className='per'>{data}</div> */}
     <ReactApexChart
       options={options}
-      series={series}
+      series={[data]}
       type="radialBar"
       height={470}
     />
+    </div>
   );
 }
 export default ApexChart;

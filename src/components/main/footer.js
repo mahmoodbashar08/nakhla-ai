@@ -10,12 +10,8 @@ function Footer() {
         rel="noreferrer"
         href="https://www.instagram.com/agritech.mosul/"
       >
-        {" "}
         Agri-Tech
       </a>
-      <br />
-      templete by{" "}
-      <a href="https://www.behance.net/boguslawpodhalicz">Bogusław Podhalicz</a>
     </div>
   );
 }

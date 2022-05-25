@@ -55,7 +55,7 @@ function ApexChart(props) {
           },
           value: {
             formatter: function (val) {
-              return parseInt(val);
+              return parseInt(val * 40) + "/4000";
             },
             color: "#111",
             fontSize: "36px",
@@ -85,7 +85,7 @@ function ApexChart(props) {
   return (
     <ReactApexChart
       options={options}
-      series={[props.percent]}
+      series={[(props.percent / 4000) * 100]}
       type="radialBar"
       height={470}
     />

@@ -56,7 +56,7 @@ class RaidialChart extends React.Component {
               },
               value: {
                 formatter: function (val) {
-                  return parseInt(val);
+                  return parseInt(val * 40) + "/4000";
                 },
                 color: "#111",
                 fontSize: "36px",
@@ -94,7 +94,7 @@ class RaidialChart extends React.Component {
           children={
             <Chart
               options={this.state.options}
-              series={[this.props.percent]}
+              series={[[(this.props.percent / 4000) * 100]]}
               type="radialBar"
             />
           }

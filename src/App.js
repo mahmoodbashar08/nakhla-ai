@@ -3,9 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Map from "./pages/map";
 import Sidebar from "./components/main/sidebar";
-import { Button, Col, Row } from "antd";
+import { Col, Row } from "antd";
 import MobileHeader from "./components/main/mobile-header";
-import Footer from "./components/home/footer";
+import Footer from "./components/main/footer";
 function App() {
   return (
     <div className="App">

@@ -6,7 +6,7 @@ import { HeartFilled } from "@ant-design/icons";
 function Footer() {
   return (
     <div className="Footer">
-      made with <HeartFilled /> by
+      made with <HeartFilled className="Icon" /> by
       <a href="https://www.instagram.com/agritech.mosul/"> Agri-Tect</a>
     </div>
   );

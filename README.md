@@ -2,7 +2,61 @@
 
 you will only need to change the [api.js](/src/constants/api.js) file , with your own server endpoints
 
-1- Markers with data </br>
+1- Home data endpoint (GET REQUEST)</br>
+Home data will be fetched for each 5 seconds from the server.
+
+- schema :
+
+```
+ {
+   "recommended":0 (int),
+   "live-co2": 0(int),
+   "concentration":0(int)
+ }
+
+```
+
+- response example :
+
+  ```
+
+  {"recommended":22949,"live-co2":22765,"concentration":40130,"id":"1"}
+
+  ```
+
+2- Input data form endpoint (POST REQUEST)
+
+- Request body schema :
+
+  ```
+  {"inputValue":0 (int)}
+
+  ```
+
+- Request body example :
+
+  ```
+  {"inputValue":212}
+
+  ```
+
+- Response schema :
+
+```
+ {
+  "data" : 0 (int),
+ }
+
+```
+
+- response example :
+
+  ```
+  {"data":212}
+
+  ```
+
+3- Markers with data (GET REQUEST) </br>
 
 ## returns markers position , and their daily week data, and the co2 percent
 

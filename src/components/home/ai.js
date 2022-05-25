@@ -4,7 +4,7 @@ import "./home.scss";
 
 const { Title } = Typography;
 
-function AiComponent() {
+function AiComponent(props) {
   return (
     <Row
       justify={"space-between"}
@@ -19,7 +19,7 @@ function AiComponent() {
           </Col>
           <Col span={24}>
             <Title level={4} style={{ paddingTop: "1.6rem" }}>
-              12
+              {props.recommended || 0}
             </Title>
           </Col>
         </Row>
@@ -31,7 +31,7 @@ function AiComponent() {
             <Title level={5}>CO2 Concentration</Title>
           </Col>
           <Col span={24}>
-            <Title level={4}>12</Title>
+            <Title level={4}>{props.co2 || 0}</Title>
           </Col>
         </Row>
       </Col>

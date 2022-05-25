@@ -66,11 +66,11 @@ Home data will be fetched for each 5 seconds from the server.
   {
     data :[
        {
-      name : 'example',
-      count : 32 ,
+      name : 'example'(string),
+      count : 32 (int),
       data : {
-        dailyChartSeries:[10,20,30,40,50,60,70],
-        co2Concentration:70
+        dailyChartSeries:[10,20,30,40,50,60,70] (int array , 7 numbers only ),
+        co2Concentration:70 (int)
             }
         } ,
         ...
